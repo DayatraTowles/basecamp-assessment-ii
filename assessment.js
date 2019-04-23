@@ -5,7 +5,12 @@
  * Assign the keys the appropriate values.
  */
 
-// CODE HERE
+// Code Here
+var me = {
+  firstName: "Dayatra",
+  age: 44,
+  state: "Ohio"
+};
 
 /**
  * #2
@@ -14,7 +19,9 @@
  * The new key should be 'faveColor'. Set it to your favorite color as a string.
  */
 
-// CODE HERE
+
+//Code Here
+me.favColor = "Purple";
 
 /**
  * #3
@@ -24,13 +31,15 @@
  */
 
 // DON'T TOUCH THE CODE BELOW
+//Code Here
 var message = {
   date: new Date(),
   userName: me.firstname
 };
 // DON'T TOUCH THE CODE ABOVE
-// CODE HERE
-
+//Code Here
+message["text"]; "Hi",
+  
 /**
  * #4
  *
@@ -39,7 +48,11 @@ var message = {
  * downVote() should take in a number, subtract one from it, and return the number.
  */
 
-// CODE HERE
+//Code Here
+  var adjustCount = {
+  upVote: 1,
+  downVote: 2,
+};
 
 /**
  * #5
@@ -47,7 +60,8 @@ var message = {
  * Create an array called 'myFriends' with four of your friends names.
  */
 
-// CODE HERE
+//Code Here
+var myFriends = ["Tonya", "Terry", "Tasha", "Isi"]
 
 /**
  * #6
@@ -55,7 +69,9 @@ var message = {
  * Add a fifth friends name to the end of your 'myFriends' array.
  */
 
-// CODE HERE
+//Code Here
+myFriends.push ("Beth")
+console.log(myFriends);
 
 /**
  * #7
@@ -67,7 +83,8 @@ var message = {
 // DON'T TOUCH THE CODE BELOW
 var myArray = [1, 2, 3, 4];
 // DON'T TOUCH THE CODE ABOVE
-// CODE HERE
+var myArrayCopy = myArray.slice (0);
+console.log(myArrayCopy);
 
 /**
  * #8
@@ -79,10 +96,12 @@ var myArray = [1, 2, 3, 4];
 //DON'T TOUCH THE CODE BELOW
 var myNumbers = [333, 1, 4, 5, 511, 34, 88, 77, 222];
 //DON'T TOUCH THE CODE ABOVE
-function evensOnly() {
-  // CODE HERE
+function evensOnly(myNumbers) {
+  for(i=0; i<myNumbers.length; i++)
+  if (i% myNumbers ==0);
+  console.log (evensOnly)
 }
-
+console.log(evensOnly);
 /**
  * #9
  *
@@ -99,7 +118,11 @@ var peopleIknow = [
   { name: "Michelle", friend: false },
   { name: "Holly", friend: true }
 ];
-
+var trueFriends = peopleIknow.filter(function(trueFriend){
+      return trueFriend.friend == true;
+});
+console.log(trueFriends)
+                          
 /**
  * #10
  *
@@ -110,3 +133,15 @@ var peopleIknow = [
  */
 
 let randomNumbers = [1, 3453, 34, 456, 32, 3, 2, 0];
+let indexes = [];
+
+function indexFinder(arr){
+  for (var i = 0, i < arr.length; i++){
+    indexes.push(i);
+  }
+  
+  return indexes;
+}
+
+indexFinder(randomNumbers);
+console.log(indexes);
